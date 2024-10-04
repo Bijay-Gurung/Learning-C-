@@ -45,21 +45,46 @@
 // long c = checked(a+b); // It check the numbers are overflowed or not. signed integer (-).
 // Console.WriteLine(c);
 
-// Using Doubles, casting, float
-double a = 32.4;
-float b = 23.2f; // f is a suffix
-double c = a + b;
-Console.WriteLine(c);
+// // Using Doubles, casting, float
+// double a = 32.4;
+// float b = 23.2f; // f is a suffix
+// double c = a + b;
+// Console.WriteLine(c);
 
-// typecasting
-int num1 = 5;
-float num2 = 2.4f;
-int num3 = num1 + (int)num2; // here i typecast float to int
-Console.WriteLine(num3);
+// // typecasting
+// int num1 = 5;
+// float num2 = 2.4f;
+// int num3 = num1 + (int)num2; // here i typecast float to int
+// Console.WriteLine(num3);
 
-// decimal
-decimal x = 5.4m;
-decimal y = 10.2m;
-decimal result = x + y;
-Console.WriteLine(result);
+// // decimal
+// decimal x = 5.4m;
+// decimal y = 10.2m;
+// decimal result = x + y;
+// Console.WriteLine(result);
 
+// using if statement
+int a = 5;
+int b = 6;
+int c = a+b;
+
+// if(c > 10){
+//     Console.WriteLine($"{c} is greater than 10.");
+// }
+
+// bool test = c > 10;
+
+// if(test){
+//     Console.WriteLine("The answer is greater than 10.");
+// }else{
+//     Console.WriteLine("The answer is less than 10.");
+// }
+
+// Using Comparison and logical operators
+
+if ((c > 10) /*&&*/ || (a==b)){
+    Console.WriteLine("True");
+}
+else{
+    Console.WriteLine("False");
+}
