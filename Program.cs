@@ -7,7 +7,7 @@
 // /* Using String Interpolination */
 // Console.WriteLine($"My name is {firstName} {lastName}.");
 
-// /* Using String Typecasting */
+// /* Using String conCatination */
 // Console.WriteLine("My name is " + firstName + " " + lastName + ".");
 
 // /* Using Trim method */
@@ -44,4 +44,22 @@
 
 // long c = checked(a+b); // It check the numbers are overflowed or not. signed integer (-).
 // Console.WriteLine(c);
+
+// Using Doubles, casting, float
+double a = 32.4;
+float b = 23.2f; // f is a suffix
+double c = a + b;
+Console.WriteLine(c);
+
+// typecasting
+int num1 = 5;
+float num2 = 2.4f;
+int num3 = num1 + (int)num2; // here i typecast float to int
+Console.WriteLine(num3);
+
+// decimal
+decimal x = 5.4m;
+decimal y = 10.2m;
+decimal result = x + y;
+Console.WriteLine(result);
 
