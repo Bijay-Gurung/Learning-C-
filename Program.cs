@@ -63,10 +63,10 @@
 // decimal result = x + y;
 // Console.WriteLine(result);
 
-// using if statement
-int a = 5;
-int b = 6;
-int c = a+b;
+// // using if statement
+// int a = 5;
+// int b = 6;
+// int c = a+b;
 
 // if(c > 10){
 //     Console.WriteLine($"{c} is greater than 10.");
@@ -82,9 +82,24 @@ int c = a+b;
 
 // Using Comparison and logical operators
 
-if ((c > 10) /*&&*/ || (a==b)){
-    Console.WriteLine("True");
-}
-else{
-    Console.WriteLine("False");
-}
+// if ((c > 10) /*&&*/ || (a==b)){
+//     Console.WriteLine("True");
+// }
+// else{
+//     Console.WriteLine("False");
+// }
+
+// Using While Loop
+// int count = 0;
+// while(count <= 5){
+//     Console.WriteLine(count);
+//     count++;
+// }
+
+// Using do While loop
+int count = 0;
+
+do{
+    Console.WriteLine(count);
+    count++;
+}while(count < 5);
