@@ -97,9 +97,23 @@
 // }
 
 // Using do While loop
-int count = 0;
+// int count = 0;
 
-do{
-    Console.WriteLine(count);
-    count++;
-}while(count < 5);
+// do{
+//     Console.WriteLine(count);
+//     count++;
+// }while(count < 5);
+
+// for(int i=0; i<5; i++){
+//     if(i==3){
+//         Console.WriteLine(i);
+//     }
+// }
+
+// Nested for loop
+for(int i=1; i<=5; i++){
+    for(int j=1; j<=i; j++){
+        Console.Write("*\t");
+    }
+    Console.WriteLine();
+}
