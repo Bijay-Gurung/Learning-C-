@@ -111,9 +111,27 @@
 // }
 
 // Nested for loop
-for(int i=1; i<=5; i++){
-    for(int j=1; j<=i; j++){
-        Console.Write("*\t");
-    }
-    Console.WriteLine();
-}
+// for(int i=1; i<=5; i++){
+//     for(int j=1; j<=i; j++){
+//         Console.Write("*\t");
+//     }
+//     Console.WriteLine();
+// }
+
+// Managing Data Collections using list of T
+// Using For each
+// var is the local variable type inference
+// var names = new List<string>
+// {
+//     "Karma",
+//     "Mohan",
+//     "Dolma",
+//     "Maya",
+//     "Nibin",
+//     "Hero"
+// };
+// names.Add("Hero");
+// names.Remove("Hero");
+// foreach(var name in names){
+//     Console.WriteLine($"Hello {name.ToUpper()}!");
+// }
