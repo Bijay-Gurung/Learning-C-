@@ -168,14 +168,20 @@ foreach(var name in names){
 */
 
 // Language Integrated Query (LINQ)
-var scores = new List<int> {97,92,81,60};
+var scores = new List<int> {97,92,60,81,100};
 
 // Defining Query Expression
-IEnumerable<int> scoreQuery = from score in scores where score > 80 select score;
+// IEnumerable<int> scoreQuery = from score in scores where score > 80 orderby score descending select score;
+IEnumerable<string> scoreQuery = from score in scores where score > 80 orderby score descending select $"The score is {score}";
+Console.WriteLine(scoreQuery.Count()); // Basically, it counts the data
 
 // Executing query
-foreach(int i in scoreQuery){
-    Console.WriteLine(i + " ");
+// foreach(int i in scoreQuery){
+//     Console.WriteLine(i + " ");
+// }
+
+foreach(string s in scoreQuery){
+    Console.WriteLine(s);
 }
 
  return;
