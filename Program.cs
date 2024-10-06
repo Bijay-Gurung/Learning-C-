@@ -172,16 +172,23 @@ var scores = new List<int> {97,92,60,81,100};
 
 // Defining Query Expression
 // IEnumerable<int> scoreQuery = from score in scores where score > 80 orderby score descending select score;
+/*
 IEnumerable<string> scoreQuery = from score in scores where score > 80 orderby score descending select $"The score is {score}";
 Console.WriteLine(scoreQuery.Count()); // Basically, it counts the data
-
+*/
 // Executing query
 // foreach(int i in scoreQuery){
 //     Console.WriteLine(i + " ");
 // }
 
-foreach(string s in scoreQuery){
-    Console.WriteLine(s);
-}
+// foreach(string s in scoreQuery){
+//     Console.WriteLine(s);
+// }
+
+// Instead of using foreach we can convert LINQ to List
+IEnumerable<int> scoreQuery = from score in scores where score > 80 orderby score descending select score;
+
+List<int> myscores = scoreQuery.ToList();
+Console.WriteLine(myscores);
 
  return;
