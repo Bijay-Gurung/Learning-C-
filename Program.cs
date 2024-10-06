@@ -1,4 +1,5 @@
-﻿// /* Writing my first hello world program */
+﻿using System;
+// /* Writing my first hello world program */
 // Console.WriteLine("Hello, World!");
 
 // string firstName = "Karma";
@@ -134,4 +135,19 @@
 // names.Remove("Hero");
 // foreach(var name in names){
 //     Console.WriteLine($"Hello {name.ToUpper()}!");
+// }
+
+/*
+Console.WriteLine(names[names.Count-1]); // names[names.Count-1] will get the last name from the list
+Console.WriteLine(names[^1]); // names[^1] it will also get the last name from the list
+*/
+
+// // Array Slicing
+// var names = new string [] {"Jack", "Simon", "Ryan", "Monty", "Henry"};
+
+// // adding name in array
+// names[names.Length-1] = "Tenz"; 
+
+// foreach(var name in names[2..5]){
+//     Console.WriteLine(name);
 // }
