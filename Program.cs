@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Globalization;
 // /* Writing my first hello world program */
 // Console.WriteLine("Hello, World!");
 
@@ -151,3 +152,15 @@ Console.WriteLine(names[^1]); // names[^1] it will also get the last name from t
 // foreach(var name in names[2..5]){
 //     Console.WriteLine(name);
 // }
+
+// Sorting and Searching List
+var names = new List<string> {"Jack", "Simon", "Ryan", "Monty", "Henry"};
+// Before Sorting
+Console.WriteLine(names.IndexOf("Ryan"));
+// After Sorting
+names.Sort();
+Console.WriteLine(names.IndexOf("Ryan"));
+
+foreach(var name in names){
+    Console.WriteLine(name);
+}
