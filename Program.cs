@@ -153,6 +153,7 @@ Console.WriteLine(names[^1]); // names[^1] it will also get the last name from t
 //     Console.WriteLine(name);
 // }
 
+/*
 // Sorting and Searching List
 var names = new List<string> {"Jack", "Simon", "Ryan", "Monty", "Henry"};
 // Before Sorting
@@ -164,3 +165,17 @@ Console.WriteLine(names.IndexOf("Ryan"));
 foreach(var name in names){
     Console.WriteLine(name);
 }
+*/
+
+// Language Integrated Query (LINQ)
+var scores = new List<int> {97,92,81,60};
+
+// Defining Query Expression
+IEnumerable<int> scoreQuery = from score in scores where score > 80 select score;
+
+// Executing query
+foreach(int i in scoreQuery){
+    Console.WriteLine(i + " ");
+}
+
+ return;
