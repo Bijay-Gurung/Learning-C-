@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Globalization;
+using System.Reflection.Emit;
 // /* Writing my first hello world program */
 // Console.WriteLine("Hello, World!");
 
@@ -282,24 +283,64 @@ Console.WriteLine(scoreQuery.Count()); // Basically, it counts the data
 // }
 
 // Class Members
+// class Car{
+//     public string color = "red"; //Field
+//     public int maxSpeed = 200; //Field
+//     public void fullThrottle() //Method
+//     {
+//         Console.WriteLine("The car is going as fast as it can!");
+//     }
+// }
+
+// class Program{
+//     static void Main(string[] args){
+//         Car myObj1 = new Car(); 
+//         Car myObj2 = new Car();
+
+//         Console.WriteLine($"{myObj1.color} | {myObj1.maxSpeed}");
+//         myObj1.fullThrottle();
+
+//         Console.WriteLine($"{myObj2.color} | {myObj2.maxSpeed}");
+//         myObj2.fullThrottle();
+//     }
+// }
+
+// Class Constructor
+// class Car{
+//     public string model;
+
+//     /*
+//     Creating a Constructor
+//     Constructor name must match class name and it doesn't have return type like void or int
+//     */
+//     public Car(){
+//         model = "Mustang"; // Setting the initial value for model
+//     }
+// }
+
+// class Program{
+//     static void Main(string[] args){
+//         Car Ford = new Car(); // Constructor is called when the object is created
+//         Console.WriteLine(Ford.model);
+//     }
+// }
+
+// Constructor parameters
 class Car{
-    public string color = "red"; //Field
-    public int maxSpeed = 200; //Field
-    public void fullThrottle() //Method
-    {
-        Console.WriteLine("The car is going as fast as it can!");
+    public string model;
+
+    /*
+    Creating a Constructor
+    Constructor name must match class name and it doesn't have return type like void or int
+    */
+    public Car(string modelName){
+        model = modelName; // Setting the initial value for model
     }
 }
 
 class Program{
     static void Main(string[] args){
-        Car myObj1 = new Car(); 
-        Car myObj2 = new Car();
-
-        Console.WriteLine($"{myObj1.color} | {myObj1.maxSpeed}");
-        myObj1.fullThrottle();
-
-        Console.WriteLine($"{myObj2.color} | {myObj2.maxSpeed}");
-        myObj2.fullThrottle();
+        Car Ford = new Car("Mustang"); // Constructor is called when the object is created
+        Console.WriteLine(Ford.model);
     }
 }
