@@ -248,20 +248,58 @@ Console.WriteLine(scoreQuery.Count()); // Basically, it counts the data
 // }
 
 // Method Overloading
+// class Program{
+//     static int PulseMethodInt(int x, int y){
+//         return x+y;
+//     }
+
+//     static double PulseMethodDouble(double x, double y){
+//         return x+y;
+//     }
+
+//     static void Main(string[] args){
+//         int mymethod1 = PulseMethodInt(5,2);
+//         double mymethod2 = PulseMethodDouble(4.2, 7.5);
+
+//         Console.WriteLine("Int "+mymethod1);
+//         Console.WriteLine("Double "+mymethod2);
+//     }
+// }
+
+// Object Oriented Programming(OOP)
+// Classes and objects
+// class Car{
+//     public string color = "red";
+// }
+
+// class Program{
+//      static void Main(string[] args){
+//         Car myObj1 = new Car();
+//         Car myObj2 = new Car();
+//         Console.WriteLine(myObj1.color);
+//         Console.WriteLine(myObj2.color);
+//     }
+// }
+
+// Class Members
+class Car{
+    public string color = "red"; //Field
+    public int maxSpeed = 200; //Field
+    public void fullThrottle() //Method
+    {
+        Console.WriteLine("The car is going as fast as it can!");
+    }
+}
+
 class Program{
-    static int PulseMethodInt(int x, int y){
-        return x+y;
-    }
-
-    static double PulseMethodDouble(double x, double y){
-        return x+y;
-    }
-
     static void Main(string[] args){
-        int mymethod1 = PulseMethodInt(5,2);
-        double mymethod2 = PulseMethodDouble(4.2, 7.5);
+        Car myObj1 = new Car(); 
+        Car myObj2 = new Car();
 
-        Console.WriteLine("Int "+mymethod1);
-        Console.WriteLine("Double "+mymethod2);
+        Console.WriteLine($"{myObj1.color} | {myObj1.maxSpeed}");
+        myObj1.fullThrottle();
+
+        Console.WriteLine($"{myObj2.color} | {myObj2.maxSpeed}");
+        myObj2.fullThrottle();
     }
 }
