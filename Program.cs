@@ -326,21 +326,44 @@ Console.WriteLine(scoreQuery.Count()); // Basically, it counts the data
 // }
 
 // Constructor parameters
-class Car{
-    public string model;
+// class Car{
+//     public string model;
 
-    /*
-    Creating a Constructor
-    Constructor name must match class name and it doesn't have return type like void or int
-    */
-    public Car(string modelName){
-        model = modelName; // Setting the initial value for model
+//     /*
+//     Creating a Constructor
+//     Constructor name must match class name and it doesn't have return type like void or int
+//     */
+//     public Car(string modelName){
+//         model = modelName; // Setting the initial value for model
+//     }
+// }
+
+// class Program{
+//     static void Main(string[] args){
+//         Car Ford = new Car("Mustang"); // Constructor is called when the object is created
+//         Console.WriteLine(Ford.model);
+//     }
+// }
+
+// Encapsulation
+class Person{
+    private string name; //Field
+
+    public Person(){ // Constructor
+        name = string.Empty;
+    }
+
+    public string Name //Property
+    {
+        get{return name;}
+        set{name = value;}
     }
 }
 
 class Program{
     static void Main(string[] args){
-        Car Ford = new Car("Mustang"); // Constructor is called when the object is created
-        Console.WriteLine(Ford.model);
+        Person myObj = new Person();
+        myObj.Name = "Karma";
+        Console.WriteLine(myObj.Name);
     }
 }
