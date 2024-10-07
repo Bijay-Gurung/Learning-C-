@@ -431,24 +431,44 @@ Abstract class is a restricted class that cannot be used to create objects (to a
 Abstract Method can only be used in abstract class, and it does not have a body. The body is provided by the derived class  (inherited from).
 */
 
-abstract class Animal{
-    public abstract void animalSound();
-    public void sleep(){
-        Console.WriteLine("Zzz");
-    }
+// abstract class Animal{
+//     public abstract void animalSound();
+//     public void sleep(){
+//         Console.WriteLine("Zzz");
+//     }
+// }
+
+// class Pig : Animal{
+//     public override void animalSound()
+//     {
+//         Console.WriteLine("The pig says: wee wee");
+//     }
+// }
+
+// class Program{
+//     static void Main(string[] args){
+//         Pig myPig = new Pig();
+//         myPig.animalSound();
+//         myPig.sleep();
+//     }
+// }
+
+// Interface
+// It is a complete abstract class which contain only abstract method and properties with empty bodies.
+interface IAnimal{
+    void animalSound();
+    // void run(); // interface methods does not have a body.
 }
 
-class Pig : Animal{
-    public override void animalSound()
-    {
+class Pig : IAnimal{
+    public void animalSound(){
         Console.WriteLine("The pig says: wee wee");
     }
 }
 
-class Program{
+class program{
     static void Main(string[] args){
         Pig myPig = new Pig();
         myPig.animalSound();
-        myPig.sleep();
     }
 }
