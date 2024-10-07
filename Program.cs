@@ -346,24 +346,46 @@ Console.WriteLine(scoreQuery.Count()); // Basically, it counts the data
 // }
 
 // Encapsulation
-class Person{
-    private string name; //Field
+// class Person{
+//     private string name; //Field
 
-    public Person(){ // Constructor
-        name = string.Empty;
-    }
+//     public Person(){ // Constructor
+//         name = string.Empty;
+//     }
 
-    public string Name //Property
-    {
-        get{return name;}
-        set{name = value;}
-    }
-}
+//     public string Name //Property
+//     {
+//         get{return name;}
+//         set{name = value;}
+//     }
+// }
 
-class Program{
-    static void Main(string[] args){
-        Person myObj = new Person();
-        myObj.Name = "Karma";
-        Console.WriteLine(myObj.Name);
-    }
-}
+// class Program{
+//     static void Main(string[] args){
+//         Person myObj = new Person();
+//         myObj.Name = "Karma";
+//         Console.WriteLine(myObj.Name);
+//     }
+// }
+
+// Inheritance
+// class Vehicle // Base class (Parent Class)
+// {
+//     public string brand = "Ford"; // Field
+//     public void honk() // Method
+//     {
+//         Console.WriteLine("Tuut, tuut!");
+//     }
+// }
+
+// class Car : Vehicle{ // Derived Class (Child Class)
+//     public string modelName = "Mustang";
+// }
+
+// class Program{
+//     static void Main(string[] args){
+//         Car myCar = new Car();
+//         myCar.honk();
+//         Console.WriteLine(myCar.brand +" "+ myCar.modelName);
+//     }
+// }
