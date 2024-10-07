@@ -168,7 +168,7 @@ foreach(var name in names){
 */
 
 // Language Integrated Query (LINQ)
-var scores = new List<int> {97,92,60,81,100};
+// var scores = new List<int> {97,92,60,81,100};
 
 // Defining Query Expression
 // IEnumerable<int> scoreQuery = from score in scores where score > 80 orderby score descending select score;
@@ -185,10 +185,83 @@ Console.WriteLine(scoreQuery.Count()); // Basically, it counts the data
 //     Console.WriteLine(s);
 // }
 
-// Instead of using foreach we can convert LINQ to List
-IEnumerable<int> scoreQuery = from score in scores where score > 80 orderby score descending select score;
+// IEnumerable<int> scoreQuery = from score in scores where score > 80 orderby score descending select score;
 
-List<int> myscores = scoreQuery.ToList();
-Console.WriteLine(myscores);
+// var scoreQuery = scores.Where(s => s> 80).OrderByDescending(s => s);
 
- return;
+// List<int> myscores = scoreQuery.ToList();
+// foreach(var score in myscores){
+//     Console.WriteLine(score);
+// }
+
+//  return;
+
+// Object Oriented Programming
+// Using Encapsulation
+// var p1 = new Person("Karma", "Gurung", new DateOnly(2004,04,23));
+// var p2 = new Person("Bijay", "Gurung", new DateOnly(2061,01,11));
+
+// List<Person> people = [p1,p2];
+// Console.WriteLine(people.Count);
+// public class Person
+// {
+//     public Person(string first, string last, DateOnly bd){
+//         firstName = first;
+//         lastName = last;
+//         birthday = bd;
+//     }
+//     private string firstName;
+//     private string lastName;
+//     private DateOnly birthday;
+// }
+
+// public class Person(string firstname, string lastname, DateOnly birthday)
+// {
+//     public string First {get;} = firstname;
+//     public string Last {get;} = lastname;
+//     public DateOnly Birthday {get;} = birthday;
+// }
+
+// Learning Method
+// class Program{
+//     static void MyMethod(){
+//         Console.WriteLine("I just got executed.");
+//     }
+
+//     static void Main(String[] args){
+//         MyMethod();
+//     }
+// }
+
+// Parameters & Arguments
+// class Program{
+//     static void MyMethod(string fname,int age){
+//         Console.WriteLine(fname + " Gurung");
+//         Console.WriteLine(age);
+//     }
+
+//     static void Main(String[] args){
+//         MyMethod("Karma", 20);
+//         MyMethod("Bijay", 20);
+//         MyMethod("Kritan", 21);
+//     }
+// }
+
+// Method Overloading
+class Program{
+    static int PulseMethodInt(int x, int y){
+        return x+y;
+    }
+
+    static double PulseMethodDouble(double x, double y){
+        return x+y;
+    }
+
+    static void Main(string[] args){
+        int mymethod1 = PulseMethodInt(5,2);
+        double mymethod2 = PulseMethodDouble(4.2, 7.5);
+
+        Console.WriteLine("Int "+mymethod1);
+        Console.WriteLine("Double "+mymethod2);
+    }
+}
