@@ -393,32 +393,62 @@ Console.WriteLine(scoreQuery.Count()); // Basically, it counts the data
 
 // Polymorphism
 /* It means many form and it occurs when we have many classes that are related to each other by inheritance. */
-class Animal{
-    public virtual void animalSound(){
-        Console.WriteLine("The animals make a sound");
+// class Animal{
+//     public virtual void animalSound(){
+//         Console.WriteLine("The animals make a sound");
+//     }
+// }
+
+// class Pig : Animal{
+//     public override void animalSound(){
+//         Console.WriteLine("The pig says: wee wee");
+//     }
+// }
+
+// class Dog : Animal{
+//     public override void animalSound(){
+//         Console.WriteLine("The dog says: bow wow");
+//     }
+// }
+
+// class Program{
+//     static void Main(string[] args){
+//         Animal myAnimal = new Animal();
+//         Pig myPig = new Pig();
+//         Dog myDog = new Dog();
+
+//         myAnimal.animalSound();
+//         myPig.animalSound();
+//         myDog.animalSound();
+//     }
+// }
+
+// Abstraction
+/*
+It is the process of hiding certain details and showing only essential information to the user.
+Abstract class is a restricted class that cannot be used to create objects (to access it, it must be inherited from another class)
+
+Abstract Method can only be used in abstract class, and it does not have a body. The body is provided by the derived class  (inherited from).
+*/
+
+abstract class Animal{
+    public abstract void animalSound();
+    public void sleep(){
+        Console.WriteLine("Zzz");
     }
 }
 
 class Pig : Animal{
-    public override void animalSound(){
+    public override void animalSound()
+    {
         Console.WriteLine("The pig says: wee wee");
-    }
-}
-
-class Dog : Animal{
-    public override void animalSound(){
-        Console.WriteLine("The dog says: bow wow");
     }
 }
 
 class Program{
     static void Main(string[] args){
-        Animal myAnimal = new Animal();
         Pig myPig = new Pig();
-        Dog myDog = new Dog();
-
-        myAnimal.animalSound();
         myPig.animalSound();
-        myDog.animalSound();
+        myPig.sleep();
     }
 }
