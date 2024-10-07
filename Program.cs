@@ -455,20 +455,47 @@ Abstract Method can only be used in abstract class, and it does not have a body.
 
 // Interface
 // It is a complete abstract class which contain only abstract method and properties with empty bodies.
-interface IAnimal{
-    void animalSound();
-    // void run(); // interface methods does not have a body.
+// interface IAnimal{
+//     void animalSound();
+//     // void run(); // interface methods does not have a body.
+// }
+
+// class Pig : IAnimal{
+//     public void animalSound(){
+//         Console.WriteLine("The pig says: wee wee");
+//     }
+// }
+
+// class program{
+//     static void Main(string[] args){
+//         Pig myPig = new Pig();
+//         myPig.animalSound();
+//     }
+// }
+
+// Multiple Inheritance
+interface IFirstInterface{
+    void myMethod();
 }
 
-class Pig : IAnimal{
-    public void animalSound(){
-        Console.WriteLine("The pig says: wee wee");
+interface ISecondInterface{
+    void myOtherMethod();
+}
+
+class DemoClass : IFirstInterface, ISecondInterface{
+    public void myMethod(){
+        Console.WriteLine("Hi!");
+    }
+
+    public void myOtherMethod(){
+        Console.WriteLine("Hello!");
     }
 }
 
-class program{
+class Program{
     static void Main(string[] args){
-        Pig myPig = new Pig();
-        myPig.animalSound();
+        DemoClass myobj = new DemoClass();
+        myobj.myMethod();
+        myobj.myOtherMethod();
     }
 }
