@@ -474,28 +474,45 @@ Abstract Method can only be used in abstract class, and it does not have a body.
 // }
 
 // Multiple Inheritance
-interface IFirstInterface{
-    void myMethod();
-}
+// interface IFirstInterface{
+//     void myMethod();
+// }
 
-interface ISecondInterface{
-    void myOtherMethod();
-}
+// interface ISecondInterface{
+//     void myOtherMethod();
+// }
 
-class DemoClass : IFirstInterface, ISecondInterface{
-    public void myMethod(){
-        Console.WriteLine("Hi!");
-    }
+// class DemoClass : IFirstInterface, ISecondInterface{
+//     public void myMethod(){
+//         Console.WriteLine("Hi!");
+//     }
 
-    public void myOtherMethod(){
-        Console.WriteLine("Hello!");
-    }
-}
+//     public void myOtherMethod(){
+//         Console.WriteLine("Hello!");
+//     }
+// }
 
-class Program{
-    static void Main(string[] args){
-        DemoClass myobj = new DemoClass();
-        myobj.myMethod();
-        myobj.myOtherMethod();
-    }
-}
+// class Program{
+//     static void Main(string[] args){
+//         DemoClass myobj = new DemoClass();
+//         myobj.myMethod();
+//         myobj.myOtherMethod();
+//     }
+// }
+
+// enum is a special class that represent a group of constants (unchangeable/ read-only variables).
+
+// class Program{
+//     enum Level{
+//     Low,
+//     Medium,
+//     High
+//     }
+
+//     static void Main(string[] args){
+//         // Level myVar = Level.Low;
+//         int myVar = (int) Level.Medium;
+//         Console.WriteLine(myVar);
+//     }
+// }
+
