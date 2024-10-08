@@ -527,3 +527,22 @@ Abstract Method can only be used in abstract class, and it does not have a body.
 // finally{
 //     Console.WriteLine("The try-catch is finished");
 // }
+
+// Files
+/*
+AppendText() = Append text at the end of existing file
+Copy() = copies a file
+Create() = create or overwrites a file
+Delete() = Delete a file
+Exists() = Check whether the file exists
+ReadAllText() = Read the contents of a file
+WriteAllText() = Create a file and write the content to it. it the file already exists then the content will be overwritten
+Replace() = Replace a content of a file with the content of another file.
+*/
+// using System.IO;
+
+// string writeText = "Hello World!";
+// File.WriteAllText("hello.txt",writeText);
+
+// string readText = File.ReadAllText("hello.txt");
+// Console.WriteLine(readText);
