@@ -516,3 +516,14 @@ Abstract Method can only be used in abstract class, and it does not have a body.
 //     }
 // }
 
+// Exceptions
+// try{
+//     int[] myNumberes = {1,2,3};
+//     Console.WriteLine(myNumberes[2]);
+// }
+// catch(Exception e){
+//     Console.WriteLine(e.Message);
+// }
+// finally{
+//     Console.WriteLine("The try-catch is finished");
+// }
